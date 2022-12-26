@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+} 
+body {
+  margin: 0%;
+  font-family: 'Jost', sans-serif;
+  background-color: aquamarine;
+}
+p {
+  margin: 0%;
+}

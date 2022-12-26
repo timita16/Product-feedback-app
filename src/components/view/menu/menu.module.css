@@ -1,0 +1,78 @@
+.div {
+    background-color: rgba(220, 220, 220, 0.132);
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    background-color: #c1c1c166;
+}
+.section {
+    background: #F7F8FD;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    width: 80%;
+}
+.divPrincipal {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.primerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.roadmap {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    color: #3A4374;
+}
+.segundoDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.divParrafo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.parrafo {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #647196;
+    padding-left: 20px;
+    position: relative;
+}
+.parrafo::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 8px;
+}
+.divParrafo:nth-child(1) .parrafo::before{
+    background: #F49F85;
+}
+.divParrafo:nth-child(2) .parrafo::before{
+    background: #AD1FEA;
+}
+.divParrafo:nth-child(3) .parrafo::before{
+    background: #62BCFA;
+}
+.span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: right;
+    color: #647196;
+}
