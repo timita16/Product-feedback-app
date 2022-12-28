@@ -2,6 +2,7 @@ import React from 'react'
 import image from "../../../assets/shared/mobile/icon-hamburger.svg";
 import useMenuMobile from '../../hooks/useMenuMobile';
 import Menu from '../menu/Menu';
+import NavBar from '../navBar/NavBar';
 import headerModule from "./Header.module.css"
 
 const Header = () => {
@@ -21,6 +22,7 @@ const Header = () => {
       {
         menu && <Menu />
       }
+      <NavBar />
     </>
   )
 }

@@ -4,6 +4,9 @@
     display: flex;
     justify-content: end;
     background-color: #c1c1c166;
+    position: absolute;
+    top: 60px;
+    z-index: 2;
 }
 .section {
     background: #F7F8FD;

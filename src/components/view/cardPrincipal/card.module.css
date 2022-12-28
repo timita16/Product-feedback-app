@@ -1,0 +1,74 @@
+.div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas: 
+    "arriba arriba"
+    "segundo tercero";
+    align-items: center;
+    justify-content: center;
+}
+.primerDiv {
+    grid-area: arriba;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.title {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.180556px;
+    color: #3A4374;
+}
+.description {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #647196;
+}
+.category {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: #4661E6;
+    padding: 8px 11px;
+    background: #F2F4FF;
+    border-radius: 10px;
+    width: fit-content;
+}
+.divFlecha {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #F2F4FE;
+    border-radius: 10px;
+    padding: 5px 8px;
+    width: fit-content;
+    grid-area: segundo;
+    height: fit-content;
+}
+.upvotes {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.180556px;
+    color: #3A4374;
+}
+.divComent {
+    display: flex;
+    justify-self: flex-end;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px 8px;
+    width: fit-content;
+    grid-area: tercero;
+}
+.navLink {
+    text-decoration: none;
+}

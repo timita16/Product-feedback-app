@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import image from "../../../assets/suggestions/icon-suggestions.svg";
+import { dataContext } from '../../context/FetchContext';
 import useMenuMobile from '../../hooks/useMenuMobile';
-import useSelect from '../../hooks/useSelect';
 import navBarModule from "./navBar.module.css";
 
 const NavBar = () => {
@@ -12,7 +12,7 @@ const NavBar = () => {
     let {
         category,
         handleClickCategory,
-    } = useSelect();
+    } = useContext(dataContext);
   return (
     <nav className={navBarModule.nav}>
         <div className={navBarModule.divSuggestions}>
