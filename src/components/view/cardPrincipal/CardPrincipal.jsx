@@ -10,10 +10,11 @@ const CardPrincipal = ({data}) => {
         description,
         category,
         upvotes,
-        comments
+        comments,
+        id
     } = data
     return (
-        <NavLink to={`/blog/${title}`} className={cardModule.navLink}>
+        <NavLink to={`/blog/${id}`} className={cardModule.navLink}>
             <div className={cardModule.div}>
                 <div className={cardModule.primerDiv}>
                     <p className={cardModule.title}>{title}</p>

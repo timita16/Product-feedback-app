@@ -1,0 +1,47 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.divLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.back {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #647196;
+    border: none;
+    outline: none;
+}
+.back::before {
+    content: url("../../../assets/shared/icon-arrow-left.svg");
+    margin-right: 10px;
+}
+.editLink {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #F2F4FE;
+    padding: 8px 11px;
+    background: #4661E6;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.divComentarios {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+.comentarios {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    color: #3A4374;
+}

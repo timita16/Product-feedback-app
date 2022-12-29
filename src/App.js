@@ -1,13 +1,13 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
-import TopicBlog from './routes/topicBlog/TopicBlog';
-import Home from './routes/home/Home';
+import FeedbackDetail from './components/view/feedbackDetail/FeedbackDetail';
+import Home from './components/view/home/Home';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/blog/:title" element={<TopicBlog />} />
+      <Route path="/blog/:id" element={<FeedbackDetail />} />
       <Route path='*' element="" /> 
     </Routes>
   );

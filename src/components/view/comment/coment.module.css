@@ -1,0 +1,50 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.primerDiv {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 120px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+.image {
+    width: 50px;
+    border-radius: 50%;
+}
+.name {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.180556px;
+    color: #3A4374;
+}
+.username {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #647196;
+}
+.reply {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: #4661E6;
+    text-align: end;
+}
+.contenido {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #647196;
+}
+.linea {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #64719630;
+    margin-top: 10px;
+}
