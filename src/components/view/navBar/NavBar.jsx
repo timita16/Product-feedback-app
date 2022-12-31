@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom';
 import image from "../../../assets/suggestions/icon-suggestions.svg";
 import { dataContext } from '../../context/FetchContext';
 import useMenuMobile from '../../hooks/useMenuMobile';
@@ -33,7 +34,7 @@ const NavBar = () => {
                     </div>
                 }
             </div>
-            <a href="#" className={navBarModule.buton}>+ Add Feedback</a>
+            <Link to="/addFeedback" className={navBarModule.buton}>+ Add Feedback</Link>
         </div>
     </nav>
   )
