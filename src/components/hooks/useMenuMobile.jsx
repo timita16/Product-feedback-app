@@ -1,8 +1,13 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-const useMenuMobile = () => {
+const useMenuMobile = (category) => {
     const [menu, setMenu] = useState(false);
-
+    
+    //cade vez que category cambie, cerra el menu
+    useEffect(() => {
+      setMenu(false)
+    }, [category])
+    
     const handleClick = () => {
         if(!menu) {
             setMenu(true)

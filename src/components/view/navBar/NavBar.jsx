@@ -7,13 +7,13 @@ import navBarModule from "./navBar.module.css";
 
 const NavBar = () => {
     let {
-        menu,
-        handleClick
-    } = useMenuMobile()
-    let {
         category,
         handleClickCategory,
     } = useContext(dataContext);
+    let {
+        menu,
+        handleClick
+    } = useMenuMobile(category);
   return (
     <nav className={navBarModule.nav}>
         <div className={navBarModule.divSuggestions}>

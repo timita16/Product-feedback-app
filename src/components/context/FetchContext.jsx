@@ -12,8 +12,10 @@ if(!localStorage.getItem("data")) {
 }
 
 const FetchContext = ({children}) => {
-    const [category, setCategory] = useState("Most votes");
+    const [category, setCategory] = useState("Most Upvotes");
     const handleClickCategory = (e) => setCategory(e.target.id);
+
+
 
     const values = {
         category,

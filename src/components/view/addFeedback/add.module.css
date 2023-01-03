@@ -1,8 +1,9 @@
 .section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     padding: 20px;
+    position: relative;
 }
 .divLink {
     display: flex;
@@ -30,4 +31,102 @@
     background: #4661E6;
     border-radius: 10px;
     text-decoration: none;
+}
+
+.span {
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.span::after {
+    content: url("../../../assets/shared/icon-new-feedback.svg");
+    position: absolute;
+    position: absolute;
+    left: 10px;
+    top: 40px;
+}
+/* form */
+.divForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0px;
+    margin-top: 20px;
+}
+.divInput {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.titleForm {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    color: #3A4374;
+    margin-top: 20px;
+}
+.titleInput {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.180556px;
+    color: #3A4374;
+}
+.subTitleInput {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #647196;
+}
+.textarea {
+    resize: none;
+    border-radius: 10px;
+    background: #F7F8FD;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin-top: 8px;
+}
+.select {
+    background: #F7F8FD;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-top: 8px;
+    padding: 10px;
+}
+.option {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #647196;
+}
+.buttonAdd {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    color: #F2F4FE;
+    background-color: #A337F6;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.navLinkCancelar {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    color: #F2F4FE;
+    background: #3A4374;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
 }
