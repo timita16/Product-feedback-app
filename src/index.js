@@ -5,15 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import FetchContext from './components/context/FetchContext';
 import { BrowserRouter as Router } from "react-router-dom";
+import ContextForm from './components/context/FormContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FetchContext>
-      <Router>
-        <App />
-      </Router>
-    </FetchContext>
+    <ContextForm>
+      <FetchContext>
+        <Router>
+          <App />
+        </Router>
+      </FetchContext>
+    </ContextForm>
+      
   </React.StrictMode>
 );
 
