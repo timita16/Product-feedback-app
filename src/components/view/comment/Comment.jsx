@@ -2,7 +2,6 @@ import React from 'react';
 import comentModule from "./coment.module.css";
 
 const Comment = ({comentario, index, cantComent}) => {
-    console.log(cantComent)
   return (
     <>
         <section className={comentModule.section}>

@@ -93,6 +93,9 @@
     padding: 10px;
     margin-top: 8px;
 }
+.inputError {
+    border: 1px solid #D73737;
+}
 .select {
     background: #F7F8FD;
     border-radius: 10px;
@@ -129,4 +132,10 @@
     border-radius: 10px;
     text-decoration: none;
     padding: 10px;
+}
+.errorMsg {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #D73737;
 }

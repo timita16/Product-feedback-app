@@ -10,13 +10,13 @@ import ContextForm from './components/context/FormContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ContextForm>
       <FetchContext>
-        <Router>
-          <App />
-        </Router>
+        <ContextForm>
+          <Router>
+            <App />
+          </Router>
+        </ContextForm>
       </FetchContext>
-    </ContextForm>
       
   </React.StrictMode>
 );

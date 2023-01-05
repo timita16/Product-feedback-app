@@ -10,20 +10,20 @@ const FeedbackDetail = () => {
     const navigate = useNavigate();
     const {id} = useParams();
     let {
-      datas
-  } = useContext(dataContext);
-  let data = datas.productRequests.find(el => el.id === Number(id));
+      data
+    } = useContext(dataContext);
+  let datas = data.productRequests.find(el => el.id === Number(id));
   return (
     <section className={feedbackModule.section}>
       <div className={feedbackModule.divLink}>
         <button onClick={() => navigate(-1)} className={feedbackModule.back}>Go back</button>
         <Link to="" className={feedbackModule.editLink}>Edit feedback</Link>
       </div>
-      <CardPrincipal data={data} />
+      <CardPrincipal data={datas} />
       <div className={feedbackModule.divComentarios}>
         <p className={feedbackModule.comentarios}> {data.comments?.length} Comments</p>
         {
-          data.comments?.map((el, index) => 
+          datas.comments?.map((el, index) => 
             <Comment key={el.id} comentario={el} index={index} cantComent={data.comments?.length} />
           )
         }

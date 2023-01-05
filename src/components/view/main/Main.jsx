@@ -6,14 +6,14 @@ import mainModule from "./main.module.css"
 
 const Main = () => {
     let {
-        datas,
+        data,
         category
     } = useContext(dataContext);
-    ordenarData(datas, category)
+    ordenarData(data, category)
   return (
     <main className={mainModule.main}>
         {
-            datas.productRequests.map(el => 
+            data.productRequests.map(el => 
                 <CardPrincipal key={el.id} data={el}/>
             )
         }
