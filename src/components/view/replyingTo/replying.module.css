@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
+    padding-left: 20px;
 }
 .primerDiv {
     width: 100%;

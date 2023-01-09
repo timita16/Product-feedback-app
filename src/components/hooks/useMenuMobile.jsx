@@ -5,7 +5,7 @@ const useMenuMobile = (category) => {
     
     //cade vez que category cambie, cerra el menu
     useEffect(() => {
-      setMenu(false)
+      setMenu(false);
     }, [category])
     
     const handleClick = () => {
@@ -18,7 +18,8 @@ const useMenuMobile = (category) => {
 
   return {
     handleClick,
-    menu
+    menu,
+    setMenu
   }
 }
 

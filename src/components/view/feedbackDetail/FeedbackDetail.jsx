@@ -5,6 +5,7 @@ import feedbackModule from "./feedback.module.css"
 import CardPrincipal from '../cardPrincipal/CardPrincipal';
 import { useNavigate } from 'react-router-dom';
 import Comment from '../comment/Comment';
+import AddComment from '../addComment/AddComment';
 
 const FeedbackDetail = () => {
     const navigate = useNavigate();
@@ -21,13 +22,14 @@ const FeedbackDetail = () => {
       </div>
       <CardPrincipal data={datas} />
       <div className={feedbackModule.divComentarios}>
-        <p className={feedbackModule.comentarios}> {data.comments?.length} Comments</p>
+        <p className={feedbackModule.comentarios}> {datas.comments?.length} Comments</p>
         {
           datas.comments?.map((el, index) => 
-            <Comment key={el.id} comentario={el} index={index} cantComent={data.comments?.length} />
+            <Comment key={el.id} comentario={el} index={index} cantComent={datas.comments?.length}  />
           )
         }
       </div>
+      <AddComment id={id} />
     </section>
   )
 }
